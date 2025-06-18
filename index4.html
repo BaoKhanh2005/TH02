@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký thông tin</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: center;
+            background-color: #f2f2f2;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        
+        label {
+            display: block;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .gender-options {
+            margin-top: 5px;
+        }
+        
+        .gender-options input {
+            margin-right: 5px;
+        }
+        
+        button {
+            margin-top: 5px;
+            width: auto;
+            padding: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Đăng ký thông tin</h1>
+    <form>
+        <label for="name">Họ tên:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Số điện thoại:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label>Giới tính:</label>
+        <div class="gender-options">
+            <input type="radio" id="male" name="gender" value="Nam" required>
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="gender" value="Nữ">
+            <label for="female">Nữ</label>
+        </div>
+
+        <button type="submit">Gửi</button>
+    </form>
+</body>
+
+</html>
